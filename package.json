@@ -1,0 +1,11 @@
+{
+  "name": "emir",
+  "version": "1.0.0",
+  "description": "form test freecodecamp.com",
+  "main": "index.js",
+  "scripts": {
+  "sass": "sass --watch ./sass/main.scss:./style.css"
+  },
+  "author": "emk",
+  "license": "ISC"
+}

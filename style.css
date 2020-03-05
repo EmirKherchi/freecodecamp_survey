@@ -1,0 +1,33 @@
+body {
+  color: #f3f3f3;
+  background-image: url("https://zupimages.net/up/20/10/bhf4.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  font-size: 18px;
+  font-family: "poppins", sans-serif;
+}
+
+/*header*/
+header {
+  margin-top: 10%;
+}
+header #title {
+  font-size: 32px;
+}
+header #description {
+  text-shadow: 1px 1px 1px #0e0e0e;
+  font-weight: 100;
+}
+
+.survey {
+  margin-top: 5%;
+  padding: 40px;
+  width: 70%;
+  background-color: rgba(27, 27, 50, 0.8);
+}
+.survey span {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+/*# sourceMappingURL=style.css.map */
