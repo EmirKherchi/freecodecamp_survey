@@ -1,4 +1,40 @@
+
 $textcolor: #f3f3f3;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+// Tablets and small desktops
+$screen-lg-min: 992px;
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+  @media (max-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+// Medium devices
+@mixin md {
+  @media (max-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+// Large devices
+@mixin lg {
+  @media (max-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+// Extra large devices
+@mixin xl {
+  @media (max-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+// end of variables and mixins no map saas because one page.
 
 body {
   color: $textcolor;
@@ -7,6 +43,10 @@ body {
   background-attachment: fixed;
   font-size: 18px;
   font-family: "poppins", sans-serif;
+
+  @include md {
+    background-attachment: initial;
+  }
 }
 
 /*header*/
@@ -24,14 +64,35 @@ header {
   }
 }
 
+/*survey*/
+
 .survey {
   margin-top: 5%;
-  padding: 40px;
+  margin-bottom: 5%;
+  padding: 4%;
   width: 70%;
   background-color: rgba(27, 27, 50, 0.8);
 
-  span{
+  .form-group {
+    margin: 20px 0px;
+  }
+
+  span {
     font-size: 14px;
     font-weight: 100;
+  }
+  .form-check-input {
+    height: 18px;
+    width: 18px;
+  }
+  .form-check-label {
+    margin-left: 15px;
+  }
+  .btn {
+    margin-top: 30px;
+    height: 45px;
+    &:hover {
+      background-color: lighten(#28a745, 10);
+    }
   }
 }

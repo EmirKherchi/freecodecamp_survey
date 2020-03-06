@@ -6,6 +6,11 @@ body {
   font-size: 18px;
   font-family: "poppins", sans-serif;
 }
+@media (max-width: 768px) {
+  body {
+    background-attachment: initial;
+  }
+}
 
 /*header*/
 header {
@@ -19,15 +24,34 @@ header #description {
   font-weight: 100;
 }
 
+/*survey*/
 .survey {
   margin-top: 5%;
-  padding: 40px;
+  margin-bottom: 5%;
+  padding: 4%;
   width: 70%;
   background-color: rgba(27, 27, 50, 0.8);
+}
+.survey .form-group {
+  margin: 20px 0px;
 }
 .survey span {
   font-size: 14px;
   font-weight: 100;
+}
+.survey .form-check-input {
+  height: 18px;
+  width: 18px;
+}
+.survey .form-check-label {
+  margin-left: 15px;
+}
+.survey .btn {
+  margin-top: 30px;
+  height: 45px;
+}
+.survey .btn:hover {
+  background-color: #34ce57;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -23,6 +23,7 @@
             <h1 id="title">freeCodeCamp Survey Form</h1>
             <p id="description">Thank you for taking the time to help us improve the platform</p>
         </header>
+
         <div class="container text-left survey">
             <form id="survey-form">
                 <div class="form-group">
@@ -51,26 +52,118 @@
                         <option>Other</option>
                     </select>
                 </div>
+
                 <p>Would you recommend freeCodeCamp to a friend?</p>
                 <div class="form-check">
-                    
-                    <input class="form-check-input" type="radio" name="radios" id="definitely" value="definitely" checked>
+
+                    <input class="form-check-input" type="radio" name="radios" id="definitely" value="definitely"
+                        checked>
                     <label class="form-check-label" for="definitely">
-                      Definitely
+                        Definitely
                     </label>
-                  </div>
-                  <div class="form-check">
+                </div>
+                <div class="form-check">
                     <input class="form-check-input" type="radio" name="radios" id="maybe" value="maybe">
                     <label class="form-check-label" for="maybe">
-                      Maybe
+                        Maybe
                     </label>
-                  </div>
-                  <div class="form-check disabled">
+                </div>
+                <div class="form-check disabled">
                     <input class="form-check-input" type="radio" name="radios" id="notsure" value="notsure">
                     <label class="form-check-label" for="notsure">
-                      Not sure
+                        Not sure
                     </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="dropdown">What is your favorite feature of freeCodeCamp?</label>
+                    <select class="form-control" placeholder="test" id="dropdown">
+                        <option selected disabled>Select an option</option>
+                        <option>challenges</option>
+                        <option>Projects</option>
+                        <option>Community</option>
+                        <option>Open Source</option>
+                    </select>
+                </div>
+
+                <p>What would you like to see improved? <span>(Check all that apply)</span></p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="front">
+                    <label class="form-check-label" for="front">
+                        Front-end Projects
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="back">
+                    <label class="form-check-label" for="back">
+                        Back-end Projects
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="data">
+                    <label class="form-check-label" for="data">
+                        Data Visualization
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="challenges">
+                    <label class="form-check-label" for="challenges">
+                        Challenges
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="open">
+                    <label class="form-check-label" for="open">
+                        Open Source Community
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="gitter">
+                    <label class="form-check-label" for="gitter">
+                        Gitter help rooms
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="videos">
+                    <label class="form-check-label" for="videos">
+                        Videos
+                    </label>
+                </div>
+                
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="meetups">
+                    <label class="form-check-label" for="meetups">
+                        City Meetups
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="wiki">
+                    <label class="form-check-label" for="wiki">
+                        Wiki
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="forum">
+                    <label class="form-check-label" for="forum">
+                        Forum
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="courses">
+                    <label class="form-check-label" for="courses">
+                        Additional Courses
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Any comments or suggestions?</label>
+                    <textarea class="form-control" placeholder="Enter your comment here..." id="comments" rows="4"></textarea>
                   </div>
+
+                 
+                <button type="submit" class="btn btn-success container">Sign in</button>
+
+              
 
             </form>
         </div>
